@@ -1,24 +1,19 @@
-package main
+package example
 
 import (
+	"encoding/hex"
 	"fmt"
 
-	"github.com/dongri/go-mnemonic"
+	"github.com/DIMO-Network/go-mnemonic"
 )
 
 func main() {
-	words, _ := mnemonic.GenerateMnemonic(128, mnemonic.LanguageJapanese)
-	fmt.Println(words)
+	s := "0xd744468B9192301650f8Cb5e390BdD824DFA6Dd9"
 
-	seed := mnemonic.ToSeedHex(words, "")
-	fmt.Println(seed)
-
-	words, _ = mnemonic.GenerateMnemonic(128, mnemonic.LanguageEnglish)
-	fmt.Println(words)
-
-	words, _ = mnemonic.GenerateMnemonic(128, mnemonic.LanguageKorean)
-	fmt.Println(words)
-
-	words, _ = mnemonic.GenerateMnemonic(128, mnemonic.LanguageChineseSimplified)
+	data, err := hex.DecodeString(s)
+	if err != nil {
+		panic(err)
+	}
+	words, _ := mnemonic.EntropyToMnemonic(data)
 	fmt.Println(words)
 }

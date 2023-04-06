@@ -8,7 +8,7 @@ Go implementation of Bitcoin BIP39: Mnemonic code for generating deterministic k
 import (
 	"fmt"
 
-	"github.com/dongri/go-mnemonic"
+	"github.com/DIMO-Network/go-mnemonic"
 )
 
 func main() {

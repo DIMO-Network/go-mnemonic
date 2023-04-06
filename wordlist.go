@@ -1,11 +1,6 @@
-package wordlists
+package mnemonic
 
-import "strings"
-
-// WordlistEnglish ...
-var WordlistEnglish = strings.Split(wordlistEnglish, "\n")
-
-const wordlistEnglish = `abandon
+const WordlistEnglish = `abandon
 ability
 able
 about
