@@ -1,3 +1,3 @@
-module DIMO-Network/go-mnemonic
+module github.com/DIMO-Network/go-mnemonic
 
-go 1.20
+go 1.19
