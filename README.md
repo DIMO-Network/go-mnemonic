@@ -1,3 +1,5 @@
+⚠️ No longer used. See [`mnemonic`](https://github.com/DIMO-Network/mnemonic). ⚠️
+
 # go-mnemonic
 
 Go implementation of Bitcoin BIP39: Mnemonic code for generating deterministic keys
